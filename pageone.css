@@ -1,0 +1,44 @@
+body
+{
+  background-color: rgb(255, 208, 216);
+}
+.button-container
+{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.heading
+{
+  display:flex;
+  align-items: center;
+  justify-items:center;
+  justify-content: center;
+}
+
+
+.emoji
+{
+  height:70px;
+  width:70px;
+}
+
+
+
+.sad-emoji
+{
+  height:32px;
+  width:32px;
+  margin-left: 5px;
+
+}
+.button-text{
+  margin:0px;
+}
+
+video{
+  margin-bottom:30px;
+  margin-top:-40px;
+}

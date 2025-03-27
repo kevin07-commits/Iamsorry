@@ -1,0 +1,28 @@
+body{
+  background-color: rgb(255, 208, 216);
+
+}
+.emoji
+{
+  height:250px;
+  width:250px;
+  margin-bottom:30px;
+  margin-top:-40px;
+  
+}
+.sad-emoji
+{
+  height:32px;
+  width:32px;
+  margin-left: 5px;
+
+}
+.button-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  p{
+    margin:0px;
+  }

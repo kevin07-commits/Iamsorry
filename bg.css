@@ -1,0 +1,140 @@
+/* Center the entire page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* Ensures full-screen height */
+  background-color: rgb(255, 208, 216);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Make a vertical stack */
+.container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers vertically */
+  height: 100vh;
+  width: 200%;
+  gap: 20px; /* Adds spacing */
+}
+
+
+/* SORRY TEXT */
+.sorry-text {
+  color: white;
+  font-size: 6vw; /* Responsive font size */
+  font-family: 'Bagel Fat One', sans-serif;
+  margin-bottom: 50px; /* Space below text */
+}
+
+/* HEART */
+.heart {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  transform: rotate(-45deg);
+  margin-bottom: 50px; /* Space below heart */
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.heart:before {
+  top: -60px;
+  left: 0;
+}
+
+.heart:after {
+  left: 60px;
+  top: 0;
+}
+
+/* BUTTONS */
+.general-button {
+  width: 90%;
+  min-width:850px;
+  max-width: 850px;
+  padding: 12px;
+  font-size: 2rem;
+  font-family: 'Coiny', sans-serif;
+  background-color: rgb(255, 208, 216);
+  color: white;
+  border: 5px solid white;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px 0; /* Space between buttons */
+  margin-top:-10px;
+  text-align:center;
+  transition-delay : 0.2s;
+  transition: background-color 0.4s ease-in-out, opacity 0.4s ease-in-out;
+
+
+}
+.general-button:hover {
+  background-color: white;  
+  color: rgb(255, 208, 216);
+  border: 2px solid rgb(255, 208, 216);
+  opacity: 0.5; /* Reduces opacity to 70% */
+  transition : 0.3s;
+}
+
+.general-button:active{
+  background-color: white;
+  color:rgb(255, 208, 216);
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1000px) {
+  .sorry-text {
+      font-size: 16vw;
+      margin-bottom:100px;
+  }
+
+  .heart {
+      width: 300px;
+      height: 300px;
+      margin-bottom:100px;
+  }
+  .heart:before, .heart:after {
+      width: 300px;
+      height: 300px;
+  }
+  .heart:before {
+      top: -170px;
+  }
+  .heart:after {
+      left: 170px;
+  }
+
+  .general-button {
+      height:8vh;
+      font-size: 4.5rem;
+      text-align:center;
+      width: 15vw;
+      padding-top:5px;
+      padding-bottom:5px;
+      margin-bottom:20px;
+    
+  }
+  .container{
+    height: 100vh; /* Makes sure it covers full screen */
+    width: 100vw;
+
+}
+}
